@@ -42,7 +42,34 @@ This repository contains a professional audit suite designed to analyze the inst
 
 Follow these steps in your Linux terminal (e.g., TutorialsPoint) to execute the audit:
 
-### 1. Preparation
-Ensure all shell scripts have execution permissions:
-```bash
-chmod +x *.sh
+Phase 1: Preparing the Environment
+Before running the Python scripts, you need to make sure the terminal is ready.
+
+ 1) Open your Terminal: (e.g., TutorialsPoint or your college Linux VM).
+
+2) Upload your files: Use the terminal's "Upload" button to bring in code.py, code(1).py, code(2).py, code(3).py, and code(4).py.
+
+3) Check the files: Type ls and press Enter. You should see all your "code" files listed in the terminal.
+   
+Phase 2: Running the Python Audit (Step-by-Step)
+Because your filenames have parentheses, you must wrap them in double quotes so Linux reads them correctly.
+Step 1: Version Verification
+python3 'code.py'
+Step 2: Filesystem Mapping
+python3 "code(1).py"
+Step 3: Security Audit
+python3 "code(2).py"
+Step 4: Dependency Analysis
+python3 "code(3).py"
+Step 5: Final Report Generation
+python3 "code(4).py"
+Phase 3: Verifying the Final Output
+
+Required Dependencies
+To ensure the audit suite functions correctly, the following must be present:
+
+Python 3.x: The primary software being audited.
+
+Linux Utilities: ldd, grep, and which.
+
+Standard Libraries: The scripts utilize built-in Python modules (os, sys, subprocess, platform)—no external pip installations are required.
